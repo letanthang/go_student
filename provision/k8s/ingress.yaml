@@ -1,0 +1,21 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: APP_NAME-ing
+  namespace: default
+  annotations:
+    kubernetes.io/ingress.class: "nginx"
+    # nginx.ingress.kubernetes.io/rewrite-target: /
+  labels:
+    app: APP_NAME
+spec:
+  rules:
+    - host: go3008.info
+      http:
+        paths:
+          - path: /api/student/v1
+            backend:
+              serviceName: APP_NAME-svc
+              servicePort: APP_NAME-svc
+---
+

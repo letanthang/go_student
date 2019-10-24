@@ -1,0 +1,8 @@
+Mongo:
+  Uri: mongodb://mongoadmin:secret@localhost:27017
+  Host: localhost
+  User: mongoadmin
+  Password: secret
+
+Encrypt:
+  Secret: my-secret
