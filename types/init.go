@@ -16,9 +16,9 @@ type Student struct {
 }
 
 type AddStudentReq struct {
-	FirstName string `bson:"first_name" validate:"required"`
-	LastName  string `bson:"last_name"`
-	Age       int    `bson:"age"`
-	ClassName string `bson:"class"`
-	Email     string `bson:"email" validate:"email,min=4"`
+	FirstName string `json:"first_name" validate:"required"`
+	LastName  string `json:"last_name"`
+	Age       int    `json:"age"`
+	ClassName string `json:"class_name"`
+	Email     string `json:"email" validate:"email,min=4"`
 }

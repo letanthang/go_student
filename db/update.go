@@ -11,7 +11,7 @@ func AddStudent(req types.AddStudentReq) (interface{}, error) {
 	// counterCol := Client.Database(DBName).Collection("my_sequence")
 	// ID := mymongo.GetNextID(counterCol, "student")
 	student := types.Student{
-		ID:        3,
+		ID:        4,
 		FirstName: req.FirstName,
 		LastName:  req.LastName,
 		Age:       req.Age,
