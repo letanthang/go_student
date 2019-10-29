@@ -5,6 +5,11 @@ import (
 	"github.com/letanthang/go_fw/handler"
 )
 
+func All(e *echo.Echo) {
+	Public(e)
+	Staff(e)
+}
+
 func Public(e *echo.Echo) {
 	g := e.Group("/api/student/v1/public")
 	g.GET("/health", handler.CheckHealth)
@@ -12,8 +17,9 @@ func Public(e *echo.Echo) {
 
 }
 
-func Staff() {
-
+func Staff(e *echo.Echo) {
+	g := e.Group("/api/student/v1/staff")
+	g.POST("/student", handler.AddStudent)
 }
 
 func Private() {

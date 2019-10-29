@@ -13,7 +13,7 @@ func main() {
 	fmt.Println(config.Config)
 	fmt.Println(db.Client)
 	e := echo.New()
-	route.Public(e)
+	route.All(e)
 
 	err := e.Start(":9090")
 
