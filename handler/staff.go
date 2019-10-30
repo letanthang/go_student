@@ -5,8 +5,8 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/letanthang/go_fw/db"
-	"github.com/letanthang/go_fw/types"
+	"github.com/letanthang/go_student/db"
+	"github.com/letanthang/go_student/types"
 )
 
 func AddStudent(c echo.Context) error {

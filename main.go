@@ -4,9 +4,9 @@ import (
 	"fmt"
 
 	"github.com/labstack/echo"
-	"github.com/letanthang/go_fw/config"
-	"github.com/letanthang/go_fw/db"
-	"github.com/letanthang/go_fw/route"
+	"github.com/letanthang/go_student/config"
+	"github.com/letanthang/go_student/db"
+	"github.com/letanthang/go_student/route"
 )
 
 func main() {

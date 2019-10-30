@@ -3,7 +3,7 @@ package db
 import (
 	"context"
 
-	"github.com/letanthang/go_fw/types"
+	"github.com/letanthang/go_student/types"
 )
 
 func GetAllStudent() (*[]types.Student, error) {

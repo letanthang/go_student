@@ -4,14 +4,18 @@ import (
 	"context"
 	"time"
 
-	"github.com/letanthang/go_fw/types"
+	"github.com/letanthang/go_student/mymongo"
+	"github.com/letanthang/go_student/types"
 )
 
 func AddStudent(req types.AddStudentReq) (interface{}, error) {
-	// counterCol := Client.Database(DBName).Collection("my_sequence")
-	// ID := mymongo.GetNextID(counterCol, "student")
+	counterCol := Client.Database(DBName).Collection("my_sequence")
+	id, err := mymongo.GetNextID(counterCol, "student_seq")
+	if err != nil {
+		return nil, err
+	}
 	student := types.Student{
-		ID:        4,
+		ID:        id,
 		FirstName: req.FirstName,
 		LastName:  req.LastName,
 		Age:       req.Age,

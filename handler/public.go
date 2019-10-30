@@ -5,7 +5,7 @@ import (
 	"net/http"
 
 	"github.com/labstack/echo"
-	"github.com/letanthang/go_fw/db"
+	"github.com/letanthang/go_student/db"
 )
 
 func CheckHealth(c echo.Context) error {

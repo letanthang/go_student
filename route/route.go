@@ -2,7 +2,7 @@ package route
 
 import (
 	"github.com/labstack/echo"
-	"github.com/letanthang/go_fw/handler"
+	"github.com/letanthang/go_student/handler"
 )
 
 func All(e *echo.Echo) {
